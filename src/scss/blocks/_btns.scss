@@ -1,0 +1,43 @@
+.btn {
+    font-family: var(--font-firasans);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    font-weight: var(--font-medium);
+    cursor: pointer;
+}
+
+.btn__black {
+    color: var(--color-black);
+    &:hover {
+        color: var(--color-orange);
+    }
+}
+
+.btn__blue {
+    position: relative;
+    padding: 10px 25px;
+    color: var(--color-white);
+    border: 1px solid var(--color-black);
+    background-color: transparent;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(7px, 7px);
+        background-color: var(--color-blue);
+        z-index: -1;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:hover {
+        &::before {
+            transform: translate(0, 0);
+            background-color: var(--color-orange);
+        }
+    }
+}

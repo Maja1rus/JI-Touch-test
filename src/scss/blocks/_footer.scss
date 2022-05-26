@@ -1,0 +1,38 @@
+.footer {
+    padding-bottom: 60px;
+    width: calc(100% - 20px);
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+
+    a {
+        text-decoration: none;
+
+        svg {
+            fill: var(--color-black);
+            transition: fill 0.2s ease-in-out;
+        }
+
+        &:hover {
+            svg {
+                fill: var(--color-orange);
+            }
+        }
+    }
+}
+
+@media screen and(min-width:641px) {
+    .footer {
+        padding-bottom: 50px;
+        width: calc(100% - 40px);
+    }
+
+    .footer__social {
+        justify-content: flex-end;
+    }
+}

@@ -1,0 +1,40 @@
+:root {
+    //Fonts
+    --font-firasans: 'FiraSans', sans-serif;
+    --font-helveticaneue: 'HelveticaNeue', sans-serif;
+
+    // Color
+    --color-black: #282828;
+    --color-white: #FFFFFF;
+    --color-orange: #EF7F1A;
+    --color-blue: #0077A0;
+    ;
+    --color-gray: #6F6F6F;
+
+    // Font weight
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+
+    //Font size
+
+    --size-biggest: 5rem; // 80px
+    --size-big: 3.75rem; // 60px
+    --size-subtitle: 3.125rem; //50px
+    --size-normal-big: 1.875rem; //30px
+    --size-normal: 1.625rem; // 26px
+    --size-normal-small: 1.125rem; // 18px
+    --size-small: 0.875rem; // 14px
+
+    @media screen and(max-width:640px) {
+        --size-biggest: 3.75rem; // 60px
+
+    }
+
+    @media screen and(max-width:425px) {
+        --size-biggest: 3.125rem; // 50px
+        --size-normal: 1.1875rem; //19
+    }
+
+
+}
